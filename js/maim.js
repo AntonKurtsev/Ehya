@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     $(document).keyup(function (e) { 
-        if (e.key === 'Escape') {
+        if (e.which === 27) {
             closeModal();
         }
     });
@@ -82,6 +82,7 @@ $(document).ready(function () {
     dropdownMenuItem.click(function (e) {
         e.stopPropagation();
     });
+
     dropdownSubmenuItem.click(function (e) {
         e.stopPropagation();
         closeDropdownMenu();
@@ -124,12 +125,12 @@ $(document).ready(function () {
         grabCursor: true,
         autoplay: {
             delay: 5000,
-            disableOnInteraction: true
+            disableOnInteraction: true,
         },
         keyboard: {
             enabled: true,
-            onlyInViewport: true
-        }
+            onlyInViewport: true,
+        },
     });
 
     $('.questions-slider__slide').hover(function () {
