@@ -14,36 +14,35 @@
 <body>
     
     
-    <div class="modal-overlay">
-        <div class="modal sign-up-modal">
-            <div class="sign-up-modal__inner">
-                <img src="images/close-icon.png" alt="Close modal" class="sign-up-modal__close-btn">
-                <h3 class="sign-up-modal__title">Let’s join us</h3>
-                <button class="sign-up-modal__google-sign-up-btn">
-                    <div class="google-sign-up-img">
-                        <img src="images/Bitmap@3x.png" alt="Sign up via Google">
-                    </div>Sign up with Google</button>
-                <h4 class="sign-up-modal__subtitle">Or, sign up with your email</h4>
-                <form action="#" class="sign-up-modal__form">
-                    <h6 class="input-title">Your name*</h6>
-                    <input type="text" class="sign-up-modal__input sign-up-modal__name" placeholder="Enter your name">
-                    <h6 class="input-title">Email address*</h6>
-                    <input type="email" class="sign-up-modal__input sign-up-modal__email" placeholder="Enter email address">
-                    <h6 class="input-title">Password*</h6>
-                    <input type="password" class="sign-up-modal__input sign-up-modal__password" placeholder="Enter password">
-                    <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
-                    <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label>
-                    <button class="sign-up-modal__sign-up-btn" type="submit">Sign up</button>
-                </form>
-                <span class="sign-up-modal__info">Already have an account?
-                    <a class="sign-up-modal__info-link" href="#">Sign in now</a>
-                </span>
-            </div>
-            <!-- /.sign-up-mpdal__inner -->
+    
+    <div class="modal sign-up-modal">
+        <div class="modal-overlay"></div>
+        <div class="sign-up-modal__inner">
+            <img src="images/close-icon.png" alt="Close modal" class="sign-up-modal__close-btn">
+            <h3 class="sign-up-modal__title">Let’s join us</h3>
+            <button class="sign-up-modal__google-sign-up-btn">
+                <div class="google-sign-up-img">
+                    <img src="images/Bitmap@3x.png" alt="Sign up via Google">
+                </div>Sign up with Google</button>
+            <h4 class="sign-up-modal__subtitle">Or, sign up with your email</h4>
+            <form action="#" class="sign-up-modal__form">
+                <h6 class="input-title">Your name*</h6>
+                <input type="text" class="sign-up-modal__input sign-up-modal__name" placeholder="Enter your name">
+                <h6 class="input-title">Email address*</h6>
+                <input type="email" class="sign-up-modal__input sign-up-modal__email" placeholder="Enter email address">
+                <h6 class="input-title">Password*</h6>
+                <input type="password" class="sign-up-modal__input sign-up-modal__password" placeholder="Enter password">
+                <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
+                <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label>
+                <button class="sign-up-modal__sign-up-btn" type="submit">Sign up</button>
+            </form>
+            <span class="sign-up-modal__info">Already have an account?
+                <a class="sign-up-modal__info-link" href="#">Sign in now</a>
+            </span>
         </div>
-        <!-- /.modal sign-up-modal -->
+        <!-- /.sign-up-mpdal__inner -->
     </div>
-    <!-- /.modal-overlay -->
+    <!-- /.modal sign-up-modal -->
 
     <section class="hero">
         <div class="hero__wrapper">
@@ -670,17 +669,17 @@
             <div class="sign-up__wrapper">
                 <h2 class="sign-up__title">Let’s build something new with Ehya</h2>
                 <div class="sign-up__button-group">
-                    <a href="#" class="sign-up__button sign-up__git-button">
+                    <button class="sign-up__button sign-up__git-button">
                         <svg class="icon git-icon sign-up__git">
                             <use xlink:href="images/sprites.svg#git-icon"></use>
                         </svg>
                         View on Github
-                    </a>
-                    <a href="#" class="sign-up__button sign-up__get-button modal-open-btn">Get it now 
+                    </button>
+                    <button class="sign-up__button sign-up__get-button modal-open-btn">Get it now 
                         <svg class="icon arrow-right-icon sign-up__arrow-right">
                             <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
                         </svg>
-                    </a>
+                    </button>
                 </div>
                 <!-- /.sign-up__button-group -->
             </div>

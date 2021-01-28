@@ -33,6 +33,10 @@ $(document).ready(function () {
         closeModal();
     });
 
+    modalOverlay.on('click', function() {
+        closeModal();
+    });
+
     $(document).keyup(function (e) { 
         if (e.key === 'Escape') {
             closeModal();
