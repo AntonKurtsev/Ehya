@@ -1,0 +1,72 @@
+.sponsors
+    padding: 55px 0 63px
+    background-color: #f8fbff
+    position: relative
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 898px
+        margin: 0 auto
+        padding: 33px 0
+    &__left-side
+        max-width: 263px
+    &__title
+        font-family: 'HKGrotesk-900'
+        font-style: normal
+        font-size: 36px
+        line-height: 48px
+        letter-spacing: 0.2px
+        color: $black
+        margin-bottom: 44px
+    &__btn
+        padding: 13px 24px
+        font-style: normal
+        font-weight: 900
+        font-size: 16px
+        line-height: 22px
+        color: $blue
+        border: 2px solid $blue
+        border-radius: 2000px
+        &:hover
+            background-color: $blue
+            color: $white
+    &__right-side
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        max-width: 494px
+    &__item
+        display: flex
+        align-items: center
+        justify-content: center
+        background: $white
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05)
+        border-radius: 50%
+        &--big
+            width: 140px
+            height: 140px
+        &--small
+            width: 120px
+            height: 120px
+        &--airbnb
+            margin-right: 47px
+            // margin-bottom: 76px
+        &--google
+            margin-top: 48px
+            margin-right: 47px
+            margin-bottom: 28px
+        &--spotify
+            margin-top: 24px
+            margin-bottom: 28px
+        &--fitbit
+            margin-left: 94px
+            margin-top: 24px
+        &--mapbox
+            margin-bottom: 4px
+            margin-right: 93px
+    &__wave
+        transform: rotate(180deg)
+        margin-top: -10px
+    &__wave img
+        width: 100%

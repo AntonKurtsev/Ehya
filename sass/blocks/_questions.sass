@@ -1,0 +1,149 @@
+.questions
+    padding: 286px 0 160px
+    background-color: #0D2436
+    margin-top: -107px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 136px
+    &__advantages
+        max-width: 457px
+    &__suptitle, &__title, &__descr
+        text-align: left
+    &__title
+        color: $white
+    &__descr
+        margin-bottom: 32px
+    &__pins
+        max-width: 457px
+    &-pins
+        &__item
+            display: flex
+            align-items: flex-start
+        &__item + &__item
+            margin-top: 23px
+        &__icon
+            width: 24px
+            height: 24px
+            margin-right: 16px
+        &__title
+            font-style: normal
+            font-weight: 900
+            font-size: 16px
+            line-height: 22px
+            color: #959EAD
+            margin-bottom: 8px
+        &__text
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 28px
+            color: $grey
+    &__accordeon
+        margin-top: 11px
+        width: 520px
+        background-color: $white
+        box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+        border-radius: 8px 8px 16px 16px
+        overflow: hidden
+    &__slider
+        max-width: 775px
+        margin: 0 auto
+        overflow: hidden
+    &-slider
+        &__image
+            margin: 0 auto
+            margin-bottom: 18px
+            width: 46px
+            height: 40px
+        &__image img
+            width: 100%
+            height: 100%
+        &__slide
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__text
+            font-family: 'HKGrotesk-400'
+            font-size: 40px
+            line-height: 60px
+            text-align: center
+            letter-spacing: 0.2px
+            color: #B3BAC5
+            margin-bottom: 47px
+        &__author
+            display: flex
+            align-items: center
+        &__photo
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            overflow: hidden
+            margin-right: 16px
+        &__photo img
+            width: 100%
+            height: 100%
+        &__name
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+            color: $white
+            margin-bottom: 4px
+        &__job
+            font-style: italic
+            font-weight: normal
+            font-size: 14px
+            line-height: 19px
+            color: #5A7184
+.accordeon
+    &__line
+        width: 100%
+        height: 3px
+        background-color: #36B37E
+    &__wrapper
+        padding: 0 32px
+    &__item
+        padding: 26px 0 28px
+    &__item + &__item
+        border-top: 1px solid rgba(229, 234, 244, 0.7)
+        &--active
+            padding-bottom: 0
+        &--active .accordeon__question
+            color: $blue
+    &__question
+        display: flex
+        align-items: center
+        justify-content: space-between
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+        color: $black
+        cursor: pointer
+        &:hover
+            color: $blue
+    &__icons
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 11px
+        height: 14px
+        &--active .accordeon__icon--plus
+            display: none
+        &--active .accordeon__icon--minus
+            display: block
+    &__icon--minus
+        display: none
+    &__answer
+        margin: 12px 0 19px
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 28px
+        color: $grey
+        display: none

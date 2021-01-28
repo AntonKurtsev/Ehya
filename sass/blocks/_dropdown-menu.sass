@@ -1,0 +1,64 @@
+.dropdown-menu
+    min-width: 260px
+    background-color: $white
+    color: $black
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 22px
+    padding: 32px
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+    border-radius: 12px
+    position: absolute
+    display: none
+    opacity: 0
+    &--active
+        display: block
+        opacity: 1
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 20px
+        cursor: pointer
+        &:last-child
+            margin-bottom: 0
+        &:hover
+            color: $blue
+            font-weight: 600 
+        &--hovered
+            color: $blue
+            font-weight: 600
+        &:hover svg
+            fill: $blue
+.arrow-dropdown-menu-icon
+    margin-left: 15px
+    fill: $black
+    width: 7px
+    height: 16px
+    z-index: 7
+.dropdown-submenu
+    position: absolute
+    min-width: 240px
+    padding: 32px
+    background-color: $white
+    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+    border-radius: 12px
+    color: $black
+    display: none
+    opacity: 0
+    cursor: pointer
+    &--active
+        opacity: 1
+        display: block
+    &__item
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 12px
+        &:last-child
+            margin-bottom: 0
+        &:hover
+            color: $blue
+            font-weight: 600    

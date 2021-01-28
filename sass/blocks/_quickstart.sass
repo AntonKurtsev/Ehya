@@ -1,0 +1,65 @@
+.quickstart
+    padding: 71px 0 96px
+    &__inner
+        max-width: 750px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__monitor
+        margin-bottom: 24px
+        padding: 32px
+        background-color: #0F1F2B
+        border-radius: 16px
+    &__button-panel
+        margin-bottom: 36px
+    &__button
+        background-color: rgba(255, 255, 255, 0.06)
+        border-radius: 6px
+        padding: 7px 16px 8px
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+        color: $grey
+        &--active
+            background-color: $white
+            color: $black
+        &:hover
+            background-color: $green
+            color: $white
+    &__button + button 
+        margin-left: 9px
+    &__code-sample
+        font-family: "SF-Mono", monospace
+        font-size: 16px
+        line-height: 20px
+        color: $white
+        display: none
+        &--active
+            display: block
+    &__explanation
+        &-item
+            display: none
+            &--active
+                display: flex
+    &__icon
+        width: 24px
+        height: 24px
+        margin-right: 12px
+    &__text
+        display: flex
+        align-items: center
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        color: $black
+    &__bold-span
+        font-weight: 600
+    &__requiares
+        margin-right: 31px
+.grey-text
+    color: $grey
+.cian-text
+    color: #00B8D9

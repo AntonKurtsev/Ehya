@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehya - Software Library</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="//db.onlinewebfonts.com/c/4c84f01ded4f950150fc30c12a58b5b1?family=SF+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    
+    <div class="modal-overlay">
+        <div class="modal sign-up-modal">
+            <div class="sign-up-modal__inner">
+                <img src="images/close-icon.png" alt="Close modal" class="sign-up-modal__close-btn">
+                <h3 class="sign-up-modal__title">Let’s join us</h3>
+                <button class="sign-up-modal__google-sign-up-btn">
+                    <div class="google-sign-up-img">
+                        <img src="images/Bitmap@3x.png" alt="Sign up via Google">
+                    </div>Sign up with Google</button>
+                <h4 class="sign-up-modal__subtitle">Or, sign up with your email</h4>
+                <form action="#" class="sign-up-modal__form">
+                    <h6 class="input-title">Your name*</h6>
+                    <input type="text" class="sign-up-modal__input sign-up-modal__name" placeholder="Enter your name">
+                    <h6 class="input-title">Email address*</h6>
+                    <input type="email" class="sign-up-modal__input sign-up-modal__email" placeholder="Enter email address">
+                    <h6 class="input-title">Password*</h6>
+                    <input type="password" class="sign-up-modal__input sign-up-modal__password" placeholder="Enter password">
+                    <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
+                    <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label>
+                    <button class="sign-up-modal__sign-up-btn" type="submit">Sign up</button>
+                </form>
+                <span class="sign-up-modal__info">Already have an account?
+                    <a class="sign-up-modal__info-link" href="#">Sign in now</a>
+                </span>
+            </div>
+            <!-- /.sign-up-mpdal__inner -->
+        </div>
+        <!-- /.modal sign-up-modal -->
+    </div>
+    <!-- /.modal-overlay -->
+
+    <section class="hero">
+        <div class="hero__wrapper">
+            <div class="container">
+                <header class="hero__header header">
+                    <div class="header__logo">
+                        <a href="index.html" class="header__link">
+                            <img src="images/logo-header.svg" alt="Ehya" class="header__logo-image">
+                        </a>
+                    </div>
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item menu__item--dropdown" id="landings">
+                                <a href="#" class="menu__link">Landings
+                                    <img src="images/menu-arrow-down.svg" alt="More" class="menu__img">
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item--dropdown" id="pages">
+                                <a href="#" class="menu__link">Pages
+                                    <img src="images/menu-arrow-down.svg" alt="More" class="menu__img">
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Docs</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Help</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__button modal-open-btn">Get it now</button>
+
+                    <div class="moblile-menu">
+                        <div class="moblile-menu__wrapper">
+                            <ul class="moblile-menu__list">
+                                <li class="moblile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Home</a>
+                                </li>
+                                <li class="moblile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Landings</a>
+                                </li>
+                                <li class="moblile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Pages</a>
+                                </li>
+                                <li class="moblile-menu__item">
+                                    <a href="#" class="mobile-menu__link">Docs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.moblile-menu__wrapper -->
+                    </div>
+                    <!-- /.moblile-menu -->
+
+                </header>
+                <div class="hero__content">
+                    <h1 class="hero__title">Awesome & powerfull landing for your software library</h1>
+                    <h4 class="hero__subtitle">An awesome & powefull JavaScript library for building user interfaces</h4>
+                    <div class="hero__button-group">
+                        <a href="#" class="hero__button">
+                            <svg class="icon git-icon hero__git">
+                                <use xlink:href="images/sprites.svg#git-icon"></use>
+                            </svg>
+                            View on Github
+                        </a>
+                        <a href="#" class="hero__button">Documentation 
+                            <svg class="icon arrow-right-icon hero__arrow-right">
+                                <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- /.hero__button-group -->
+                    <p class="hero__descr">Zip-archive with production version, all sources and addons.</p>
+                    <div class="left-patern">
+                        <img src="images/hero-patern-left.svg" alt="#">
+                    </div>
+                    <!-- /.left-patern -->
+                    <div class="right-patern">
+                        <img src="images/hero-patern-right.svg" alt="#">
+                    </div>
+                    <!-- /.right-patern -->
+                </div>
+                <!-- /.hero__content -->
+            </div>
+            <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                    <li class="dropdown-menu__item">Company
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Career
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Blog
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Sign in
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Sign up
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Password Reset
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Error 404
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.dropdown-menu -->
+            <div class="dropdown-submenu">
+                <ul class="dropdown-submenu__list">
+                    <li class="dropdown-submenu__item"><a href="#">Basic</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Right Cover</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Left Cover</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Modal</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Modal with Image</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Illustration</a></li>
+                </ul>
+            </div>
+            <!-- /.dropdown_submenu -->
+        </div>
+        <!-- /.hero__wrapper -->
+        <div class="hero__wave">
+            <img src="images/wave.png" alt="wave">
+        </div>
+    </section>
+
+    <section class="features-cards"> 
+        <div class="container">
+            <div class="features-cards__inner">
+                <div class="features-cards__item">
+                    <img src="images/icon-rocket.svg" alt="Rocket" class="features-cards__icon">
+                    <div class="features-cards__descr">
+                        <h4 class="features-cards__title">Super Architecture</h4>
+                        <p class="features-cards__text">Modular, realiable, OOP, simple fast, for scalable client-side code.</p>
+                    </div>
+                    <!-- /.features-cards__descr -->
+                </div>
+                <!-- /.features-cards__item -->
+                <div class="features-cards__item">
+                    <img src="images/icon-workflow.svg" alt="Workflow" class="features-cards__icon">
+                    <div class="features-cards__descr">
+                        <h4 class="features-cards__title">No Dependencies</h4>
+                        <p class="features-cards__text">Independent of any third-party libraries or frameworks.</p>
+                    </div>
+                    <!-- /.features-cards__descr -->
+                </div>
+                <!-- /.features-cards__item -->
+                <div class="features-cards__item">
+                    <img src="images/icon-opened-file.svg" alt="Opened File" class="features-cards__icon">
+                    <div class="features-cards__descr">
+                        <h4 class="features-cards__title">Well Documented</h4>
+                        <p class="features-cards__text">Each component and module has descriptions and API.</p>
+                    </div>
+                    <!-- /.features-cards__descr -->
+                </div>
+                <!-- /.features-cards__item -->
+                <div class="features-cards__item">
+                    <img src="images/icon-like.svg" alt="Like" class="features-cards__icon">
+                    <div class="features-cards__descr">
+                        <h4 class="features-cards__title">Real Life Tested</h4>
+                        <p class="features-cards__text">We use it in our work. On this site too for the front and admin.</p>
+                    </div>
+                    <!-- /.features-cards__descr -->
+                </div>
+                <!-- /.features-cards__item -->
+                <div class="features-cards__explore-all">
+                    <a href="#" class="features-cards__link">Explore all features
+                        <svg class="icon arrow-right-icon features-cards__arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.features-cards__explore-all -->
+            </div>
+            <!-- /.features-cards__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="quickstart">
+        <div class="container">
+            <div class="quickstart__inner">
+                <h5 class="quickstart__suptitle section-suptitle">QUICKSTART</h5>
+                <h2 class="quickstart__title section-title">Awesome isn't it? Let's dive in!</h2>
+                <p class="quickstart__descr section-descr">Install packages with npm or other methods. Package will be installed to components/ directory and ready to use for your project.</p>
+                <div class="quickstart__monitor-inner">
+                    <div class="quickstart__monitor">
+                        <div class="quickstart__button-panel">
+                            <button class="quickstart__button quickstart__button--active" data-target="npm">npm</button>
+                            <button class="quickstart__button" data-target="bower">bower</button>
+                            <button class="quickstart__button" data-target="yarn">Yarn</button>
+                            <button class="quickstart__button" data-target="nuGet">NuGet</button>
+                            <button class="quickstart__button" data-target="spm">spm</button>
+                            <button class="quickstart__button" data-target="meteor">meteor</button>
+                        </div>
+                        <!-- /.quickstart__button-panel -->
+                        <div class="quickstart__code-panel">
+                            <p class="quickstart__code-sample quickstart__code-sample--active" id="npm">
+                                <span class="grey-text">$ </span>npm install <span class="cian-text">-g </span>ehya.js|
+                            </p>
+                            <p class="quickstart__code-sample" id="bower">
+                                <span class="grey-text">$ </span>bower install <span class="cian-text">-g </span>ehya.js|
+                            </p>
+                            <p class="quickstart__code-sample" id="yarn">
+                                <span class="grey-text">$ </span>Yarn install <span class="cian-text">-g </span>ehya.js|
+                            </p>
+                            <p class="quickstart__code-sample" id="nuGet">
+                                <span class="grey-text">$ </span>NuGet install <span class="cian-text">-g </span>ehya.js|
+                            </p>
+                            <p class="quickstart__code-sample" id="spm">
+                                <span class="grey-text">$ </span>spm install <span class="cian-text">-g </span>ehya.js|
+                            </p>
+                            <p class="quickstart__code-sample" id="meteor">
+                                <span class="grey-text">$ </span>meteor install <span class="cian-text">-g </span>ehya.js|
+                            </p>
+                        </div>
+                        <!-- /.quickstart__code-panel -->
+                    </div>
+                    <!-- /.quickstart__monitor -->
+                    <div class="quickstart__explanation">
+                        <div class="quickstart__explanation-item quickstart__explanation-item--active" id="npm-req">
+                            <p class="quickstart__text quickstart__requiares">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Requires
+                                <span class="quickstart__bold-span"> &nbsp;node</span>,
+                                <span class="quickstart__bold-span">&nbsp;npm&nbsp;</span>and
+                                <span class="quickstart__bold-span">&nbsp;git </span>
+                            </p>
+                            <p class="quickstart__text quickstart__version">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Latest release
+                                <span class="quickstart__bold-span">&nbsp;v1.8.9</span>
+                            </p>
+                        </div>
+                        <!-- /.quickstart__explanation-item -->
+                        <div class="quickstart__explanation-item" id="bower-req">
+                            <p class="quickstart__text quickstart__requiares">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Requires
+                                <span class="quickstart__bold-span"> &nbsp;node</span>,
+                                <span class="quickstart__bold-span">&nbsp;bower&nbsp;</span>and
+                                <span class="quickstart__bold-span">&nbsp;git </span>
+                            </p>
+                            <p class="quickstart__text quickstart__version">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Latest release
+                                <span class="quickstart__bold-span">&nbsp;v2.3</span>
+                            </p>
+                        </div>
+                        <!-- /.quickstart__explanation-item -->
+                        <div class="quickstart__explanation-item" id="yarn-req">
+                            <p class="quickstart__text quickstart__requiares">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Requires
+                                <span class="quickstart__bold-span"> &nbsp;node</span>,
+                                <span class="quickstart__bold-span">&nbsp;Yarn&nbsp;</span>and
+                                <span class="quickstart__bold-span">&nbsp;git </span>
+                            </p>
+                            <p class="quickstart__text quickstart__version">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Latest release
+                                <span class="quickstart__bold-span">&nbsp;v1.01.2</span>
+                            </p>
+                        </div>
+                        <!-- /.quickstart__explanation-item -->
+                        <div class="quickstart__explanation-item" id="nuGet-req">
+                            <p class="quickstart__text quickstart__requiares">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Requires
+                                <span class="quickstart__bold-span"> &nbsp;node</span>,
+                                <span class="quickstart__bold-span">&nbsp;NuGet&nbsp;</span>and
+                                <span class="quickstart__bold-span">&nbsp;git </span>
+                            </p>
+                            <p class="quickstart__text quickstart__version">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Latest release
+                                <span class="quickstart__bold-span">&nbsp;v3.5.0</span>
+                            </p>
+                        </div>
+                        <!-- /.quickstart__explanation-item -->
+                        <div class="quickstart__explanation-item" id="spm-req">
+                            <p class="quickstart__text quickstart__requiares">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Requires
+                                <span class="quickstart__bold-span"> &nbsp;node</span>,
+                                <span class="quickstart__bold-span">&nbsp;spm&nbsp;</span>and
+                                <span class="quickstart__bold-span">&nbsp;git </span>
+                            </p>
+                            <p class="quickstart__text quickstart__version">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Latest release
+                                <span class="quickstart__bold-span">&nbsp;v3.2.19</span>
+                            </p>
+                        </div>
+                        <!-- /.quickstart__explanation-item -->
+                        <div class="quickstart__explanation-item" id="meteor-req">
+                            <p class="quickstart__text quickstart__requiares">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Requires
+                                <span class="quickstart__bold-span"> &nbsp;node</span>,
+                                <span class="quickstart__bold-span">&nbsp;meteor&nbsp;</span>and
+                                <span class="quickstart__bold-span">&nbsp;git </span>
+                            </p>
+                            <p class="quickstart__text quickstart__version">
+                                <img src="images/check-icon.svg" alt="icon" class="quickstart__icon"> Latest release
+                                <span class="quickstart__bold-span">&nbsp;v7.007.1</span>
+                            </p>
+                        </div>
+                        <!-- /.quickstart__explanation-item -->
+                    </div>
+                    <!-- /.quickstart__explanation -->
+                </div>
+                <!-- /.quickstart__monitor-inner -->
+            </div>
+            <!-- /.quickstart__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    
+    <div class="powerfull__wave">
+        <img src="images/wave.svg" alt="">
+    </div>
+
+    <section class="powerfull">
+        <div class="container">
+            <h2 class="powerfull__title section-title">Powerfull javascript library ever</h2>
+            <div class="powerfull__descr section-descr">An awesome & powefull JavaScript library for building user interfaces. Independent of any third-party libraries or frameworks.</div>
+            <div class="powerfull__results">
+                <div class="powerfull__line"></div>
+                <!-- /.powerfull__line -->
+                <div class="powerfull__results-wrapper">
+                    <div class="powerfull__card">
+                        <img src="images/star.png" alt="Star" class="powerfull__icon">
+                        <h2 class="powerfull__count">4.98/5</h2>
+                        <span class="powerfull__text">Average ratings</span>
+                    </div>
+                    <div class="powerfull__card">
+                        <img src="images/person.png" alt="Person" class="powerfull__icon">
+                        <h2 class="powerfull__count">360k+</h2>
+                        <span class="powerfull__text">Monthly Installs</span>
+                    </div>
+                    <div class="powerfull__card">
+                        <img src="images/download.png" alt="Downloads" class="powerfull__icon">
+                        <h2 class="powerfull__count">70k+</h2>
+                        <span class="powerfull__text">Weekly Downloads</span>
+                    </div>
+                    <div class="powerfull__card">
+                        <img src="images/fire.png" alt="Fire" class="powerfull__icon">
+                        <h2 class="powerfull__count">6.4M</h2>
+                        <span class="powerfull__text">Total Downloads</span>
+                    </div>
+                </div>
+                <!-- /.powerfull__results-wrapper -->
+            </div>
+            <!-- /.powerfull__results -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h5 class="features__suptitle section-suptitle">FEATURES</h5>
+            <h2 class="features__title section-title">Explore about our awesome features</h2>
+            <p class="features__descr section-descr">An awesome & powefull JavaScript library for building user interfaces. Independent of any third-party libraries or frameworks.</p>
+            <div class="features__inner">
+                <div class="features__card">
+                    <img src="images/icon-like.svg" alt="Like" class="features__card-icon">
+                    <h4 class="features__card-title">Simple usage</h4>
+                    <p class="features__card-text">Our library makes things simple like never before, by preferring code over configuration.</p>
+                    <a href="" class="features__card-link">Learn more
+                        <svg class="icon arrow-right-icon features__card-arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.features__card -->
+                <div class="features__card">
+                    <img src="images/icon-substract.svg" alt="Substract" class="features__card-icon">
+                    <h4 class="features__card-title">Efficient builds</h4>
+                    <p class="features__card-text">Using the power of node streams, first gives you fast builds that don't write intermediary.</p>
+                    <a href="" class="features__card-link">Learn more
+                        <svg class="icon arrow-right-icon features__card-arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.features__card -->
+                <div class="features__card">
+                    <img src="images/icon-application.svg" alt="Application" class="features__card-icon">
+                    <h4 class="features__card-title">Flexible library</h4>
+                    <p class="features__card-text">Our library is designed to be agnostic about your setup and style of coding. </p>
+                    <a href="" class="features__card-link">Learn more
+                        <svg class="icon arrow-right-icon features__card-arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.features__card -->
+                <div class="features__card">
+                    <img src="images/icon-syntax.svg" alt="Syntax" class="features__card-icon">
+                    <h4 class="features__card-title">Friendly Syntax</h4>
+                    <p class="features__card-text">Our library starts from the same syntax that millions of JavaScript developers know today</p>
+                    <a href="" class="features__card-link">Learn more
+                        <svg class="icon arrow-right-icon features__card-arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.features__card -->
+                <div class="features__card">
+                    <img src="images/icon-workflow.svg" alt="Workflow" class="features__card-icon">
+                    <h4 class="features__card-title">Suit for large apps</h4>
+                    <p class="features__card-text">Using the power of node streams, first gives you fast builds that don't write intermediary.</p>
+                    <a href="" class="features__card-link">Learn more
+                        <svg class="icon arrow-right-icon features__card-arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.features__card -->
+                <div class="features__card">
+                    <img src="images/icon-multiple-shape.svg" alt="Multiple Shape" class="features__card-icon">
+                    <h4 class="features__card-title">State of the art JavaScript</h4>
+                    <p class="features__card-text">Our library offers support for the latest and evolving JavaScript features.</p>
+                    <a href="" class="features__card-link">Learn more
+                        <svg class="icon arrow-right-icon features__card-arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.features__card -->
+            </div>
+            <!-- /.features__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="sponsors">
+        <div class="sponsors__inner">
+            <div class="sponsors__left-side">
+                <h2 class="sponsors__title">See all our great sponsors</h2>
+                <button class="sponsors__btn modal-open-btn">Become Sponsor</button>
+            </div>
+            <!-- /.sponsors__left-side -->
+            <div class="sponsors__right-side">
+                <div class="sponsors__item sponsors__item--big sponsors__item--airbnb">
+                    <img src="images/airbnb.png" alt="Airbnb">
+                </div>
+                <div class="sponsors__item sponsors__item--small sponsors__item--google">
+                    <img src="images/google.png" alt="Google">
+                </div>
+                <div class="sponsors__item sponsors__item--big sponsors__item--spotify">
+                    <img src="images/spotify.png" alt="Spotify">
+                </div>
+                <div class="sponsors__item sponsors__item--small sponsors__item--fitbit">
+                    <img src="images/fitbit.png" alt="Fitbit">
+                </div>
+                <div class="sponsors__item sponsors__item--big sponsors__item--mapbox">
+                    <img src="images/mapbox.png" alt="Mapbox">
+                </div>
+            </div>
+            <!-- /.sponsors__right-side -->
+        </div>
+        <!-- /.sponsors__inner -->
+    </section>
+
+    <div class="sponsors__wave">
+        <img src="images/wave.svg" alt="">
+    </div>
+
+    <section class="questions">
+        <div class="container">
+            <div class="questions__inner">
+                <div class="questions__advantages">
+                    <h4 class="questions__suptitle section-suptitle">HAVE QUESTIONS?</h4>
+                    <h2 class="questions__title section-title">Relax because we always will be here for you</h2>
+                    <p class="questions__descr section-descr">Our library starts from the same syntax that millions of JavaScript developers know today.</p>
+                    <div class="questions__pins questions-pins">
+                        <div class="questions-pins__item">
+                            <img src="images/advantage-icon.svg" alt="Advantage icon" class="questions-pins__icon">
+                            <div class="questions-pins__descr">
+                                <h4 class="questions-pins__title">Our library are simple</h4>
+                                <p class="questions-pins__text">Our library makes things simple like never before, by preferring code over configuration.</p>
+                            </div>
+                        </div>
+                        <div class="questions-pins__item">
+                            <img src="images/advantage-icon.svg" alt="Advantage icon" class="questions-pins__icon">
+                            <div class="questions-pins__descr">
+                                <h4 class="questions-pins__title">Suit for large apps</h4>
+                                <p class="questions-pins__text">Using the power of node streams, first gives you fast builds that don't write intermediary.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.questions__pins -->
+                </div>
+                <!-- /.questions__advantages -->
+                <div class="questions__accordeon accordeon">
+                    <div class="accordeon__line"></div>
+                    <!-- /.accordeon__line -->
+                    <div class="accordeon__wrapper">
+                        <div class="accordeon__item">
+                            <h4 class="accordeon__question">How to get started?
+                                <div class="accordeon__icons">
+                                    <img src="images/plus-icon.svg" alt="Plus" class="accordeon__icon accordeon__icon--plus">
+                                    <img src="images/minus-icon.svg" alt="Minus" class="accordeon__icon accordeon__icon--minus">
+                                </div>
+                                <!-- /.accordeon__icons -->
+                            </h4>
+                            <p class="accordeon__answer">An awesome & powefull JavaScript library for building user interfaces. Makes things simple like never before, by preferring code over configuration.</p>
+                        </div>
+                        <!-- /.accordeon__item -->
+                        <div class="accordeon__item">
+                            <h4 class="accordeon__question">How to composing with components?
+                                <div class="accordeon__icons">
+                                    <img src="images/plus-icon.svg" alt="Plus" class="accordeon__icon accordeon__icon--plus">
+                                    <img src="images/minus-icon.svg" alt="Minus" class="accordeon__icon accordeon__icon--minus">
+                                </div>
+                                <!-- /.accordeon__icons -->
+                            </h4>
+                            <p class="accordeon__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vitae vero possimus, cumque voluptas tenetur?</p>
+                        </div>
+                        <!-- /.accordeon__item -->
+                        <div class="accordeon__item">
+                            <h4 class="accordeon__question">How to create your own module?
+                                <div class="accordeon__icons">
+                                    <img src="images/plus-icon.svg" alt="Plus" class="accordeon__icon accordeon__icon--plus">
+                                    <img src="images/minus-icon.svg" alt="Minus" class="accordeon__icon accordeon__icon--minus">
+                                </div>
+                                <!-- /.accordeon__icons -->
+                            </h4>
+                            <p class="accordeon__answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam magnam et, fugit a optio hic?</p>
+                        </div>
+                        <!-- /.accordeon__item -->
+                        <div class="accordeon__item">
+                            <h4 class="accordeon__question">Migrate from old version
+                                <div class="accordeon__icons">
+                                    <img src="images/plus-icon.svg" alt="Plus" class="accordeon__icon accordeon__icon--plus">
+                                    <img src="images/minus-icon.svg" alt="Minus" class="accordeon__icon accordeon__icon--minus">
+                                </div>
+                                <!-- /.accordeon__icons -->
+                            </h4>
+                            <p class="accordeon__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque autem commodi ex, ducimus est qui error possimus!</p>
+                        </div>
+                        <!-- /.accordeon__item -->
+                    </div>
+                    <!-- /.accordeon__wrapper -->
+                </div>
+                <!-- /.questions__accordeon -->
+            </div>
+            <!-- /.questions__inner -->
+            <div class="questions__slider questions-slider__container">
+                <div class="questions-slider__image">
+                    <img src="images/quote-left-icon.png" alt="Quote Icon" class="quote-icon">
+                </div>
+                <!-- /.questions-slider__image -->
+                <div class="questions-slider__wrapper swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="questions-slider__slide swiper-slide">
+                        <p class="questions-slider__text">Builds can be the most awful sinkhole for teams to waste their time with - library is a serious win for any project</p>
+                        <!-- /.questions-slider__text -->
+                        <div class="questions-slider__author">
+                            <div class="questions-slider__photo">
+                                <img src="images/author-image-1.png" alt="Bryan Arnoldy">
+                            </div>
+                            <!-- /.questions-slider__photo -->
+                            <div class="questions-slider__info">
+                                <p class="questions-slider__name">Bryan Arnoldy</p>
+                                <p class="questions-slider__job">Senior JavaScript Developer</p>
+                            </div>
+                            <!-- /.questions-slider__info -->
+                        </div>
+                        <!-- /.questions-slider__author -->
+                    </div>
+                    <!-- /.questions-slider__slide -->
+                    <div class="questions-slider__slide swiper-slide">
+                        <p class="questions-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid delectus deleniti fugiat.</p>
+                        <!-- /.questions-slider__text -->
+                        <div class="questions-slider__author">
+                            <div class="questions-slider__photo">
+                                <img src="images/author-image-2.png" alt="John Smith">
+                            </div>
+                            <!-- /.questions-slider__photo -->
+                            <div class="questions-slider__info">
+                                <p class="questions-slider__name">John Smith</p>
+                                <p class="questions-slider__job">CEO</p>
+                            </div>
+                            <!-- /.questions-slider__info -->
+                        </div>
+                        <!-- /.questions-slider__author -->
+                    </div>
+                    <!-- /.questions-slider__slide -->
+                    <div class="questions-slider__slide swiper-slide">
+                        <p class="questions-slider__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas nostrum illum animi eius quaerat?</p>
+                        <!-- /.questions-slider__text -->
+                        <div class="questions-slider__author">
+                            <div class="questions-slider__photo">
+                                <img src="images/author-image-3.png" alt="Teddy White">
+                            </div>
+                            <!-- /.questions-slider__photo -->
+                            <div class="questions-slider__info">
+                                <p class="questions-slider__name">Teddy White</p>
+                                <p class="questions-slider__job">UI/UX designer</p>
+                            </div>
+                            <!-- /.questions-slider__info -->
+                        </div>
+                        <!-- /.questions-slider__author -->
+                    </div>
+                    <!-- /.questions-slider__slide -->
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="sign-up">
+        <div class="container">
+            <div class="sign-up__wrapper">
+                <h2 class="sign-up__title">Let’s build something new with Ehya</h2>
+                <div class="sign-up__button-group">
+                    <a href="#" class="sign-up__button sign-up__git-button">
+                        <svg class="icon git-icon sign-up__git">
+                            <use xlink:href="images/sprites.svg#git-icon"></use>
+                        </svg>
+                        View on Github
+                    </a>
+                    <a href="#" class="sign-up__button sign-up__get-button modal-open-btn">Get it now 
+                        <svg class="icon arrow-right-icon sign-up__arrow-right">
+                            <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+                <!-- /.sign-up__button-group -->
+            </div>
+            <!-- /.sign-up__wrapper -->
+        </div>
+        <!-- /.container -->
+        <img src="images/hero-patern-left.svg" alt="Patern" class="sign-up__left-patern">
+        <img src="images/hero-patern-right.svg" alt="Patern" class="sign-up__right-patern">
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <a href="#" class="footer__logo-link">
+                            <img src="images/logo-black.png" alt="Logo" class="footer__logo-img">
+                        </a>
+                    </div>
+                    <p class="footer__text">Build a modern and creative website with crealand</p>
+                    <div class="footer__socials">
+                        <a href="https://www.google.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#google-footer-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#twitter-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#instagram-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#linkedin-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- /.footer__socials -->
+                </div>
+                <!-- /.footer__info -->
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">Product</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Landingpage</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Features</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Documentation</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Referral Program</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Pricing</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">Services</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Documentation</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Design</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Themes</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Landingpage</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">UI Kit</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">Company</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Terms</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Careers</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">More</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Documentation</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">License</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Changelog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.footer__wrapper -->
+            <div class="footer__copyright">
+                <div class="footer__like">
+                    <img src="images/heart.png" alt="Heart" class="footer__like-img">
+                </div>
+                <p class="footer__copyright-text">Copyright © 2019. Crafted with love.</p>
+            </div>
+            <!-- /.footer__copyright -->
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/maim.js"></script>
+</body>
+</html>

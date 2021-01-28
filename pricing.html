@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehya - Pricing</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/4c84f01ded4f950150fc30c12a58b5b1?family=SF+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="pricing-hero">
+        <div class="container">
+            <header class="hero__header pricing-hero__header pricing-header">
+                <div class="header__logo pricing-header__logo">
+                    <a href="index.html" class="header__link pricing-header__link">
+                        <img src="images/logo-black.png" alt="Ehya" class="header__logo-image pricing-header__logo-image">
+                    </a>
+                </div>
+                <nav class="header__menu pricing-header__menu pricing-menu">
+                    <ul class="menu__list pricing-menu__list">
+                        <li class="menu__item pricing-menu__item">
+                            <a href="index.html" class="menu__link pricing-menu__link">Home</a>
+                        </li>
+                        <li class="menu__item menu__item--dropdown pricing-menu__item" id="landings">
+                            <a href="#" class="menu__link pricing-menu__link">Landings
+                                <img src="images/menu-arrow-down-black.svg" alt="More" class="menu__img">
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--dropdown pricing-menu__item" id="pages">
+                            <a href="#" class="menu__link pricing-menu__link">Pages
+                                <img src="images/menu-arrow-down-black.svg" alt="More" class="menu__img">
+                            </a>
+                        </li>
+                        <li class="menu__item pricing-menu__item">
+                            <a href="#" class="menu__link pricing-menu__link">Docs</a>
+                        </li>
+                        <li class="menu__item pricing-menu__item">
+                            <a href="#" class="menu__link pricing-menu__link">Help</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__button pricing-header__button modal-open-btn">Get it now</button>
+            </header>
+            <div class="dropdown-menu">
+                <ul class="dropdown-menu__list">
+                    <li class="dropdown-menu__item">Company
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Career
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Blog
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Sign in
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Sign up
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Password Reset
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                    <li class="dropdown-menu__item">Utility - Error 404
+                        <svg class="icon arrow-dropdown-menu-icon">
+                            <use xlink:href="images/sprites.svg#arrow-dropdown-menu-icon"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.dropdown-menu -->
+            <div class="dropdown-submenu">
+                <ul class="dropdown-submenu__list">
+                    <li class="dropdown-submenu__item"><a href="#">Basic</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Right Cover</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Left Cover</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Modal</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Modal with Image</a></li>
+                    <li class="dropdown-submenu__item"><a href="#">Illustration</a></li>
+                </ul>
+            </div>
+            <!-- /.dropdown_submenu -->
+            <h1 class="pricing-hero__title">Our pricing plan made simple</h1>
+            <p class="pricing-hero__text">All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
+            <div class="pricing-plan">
+                <div class="pricing-plan__switcher">
+                    <span class="pricing-plan__period">Bill Monthly</span>
+                    <button class="pricing-plan__switcher-btn">
+                        <div class="pricing-plan__switcher-circle" id="toogle-circle"></div>
+                        <!-- /.pricing-plan__switcher-circle -->
+                    </button>
+                    <!-- /.pricing-plan__switcher-btn -->
+                    <span class="pricing-plan__period pricing-plan__period--annually">Bill Annually
+                        <span class="pricing-plan__economy">Save 15%</span>
+                    </span>
+                </div>
+                <!-- /.pricing-plan__switcher -->
+                <div class="pricing-plan__list">
+                    <div class="pricing-plan__item plan-card">
+                        <div class="plan-card__line plan-card__line--standart"></div>
+                        <!-- /.plan-card__line -->
+                        <div class="pricing-plan__item-wrapper">
+                            <div class="plan-card__price plan-card__price--standart">
+                                <span class="plan-card__price-value">$39</span>
+                                <span class="plan-card__price-value plan-card__price-value--hidden">$33</span>
+                                <span class="price-small">/month</span>
+                            </div>
+                            <span class="plan-card__name">Standard</span>
+                            <p class="plan-card__descr">All the basics for businesses that are just getting started.</p>
+                            <div class="plan-card__advantages">
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Single project use
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Basic dashboard
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    All components included
+                                </p>
+                            </div>
+                            <!-- /.plan-card__advantages -->
+                            <button class="plan-card__button modal-open-btn">
+                                Get Started
+                                <svg class="icon arrow-right-icon plan-card__arrow-right">
+                                    <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- /.pricing-plan__item-wrapper -->
+                    </div>
+                    <!-- /.pricing-plan__item plan-card -->
+
+                    <div class="pricing-plan__item plan-card">
+                        <div class="plan-card__line plan-card__line--essentials"></div>
+                        <!-- /.plan-card__line -->
+                        <div class="pricing-plan__item-wrapper">
+                            <div class="plan-card__price plan-card__price--essentials">
+                                <span class="plan-card__price-value">$99</span>
+                                <span class="plan-card__price-value plan-card__price-value--hidden">$84</span>
+                                <span class="price-small">/month</span>
+                            </div>
+                            <span class="plan-card__name">Essentials</span>
+                            <p class="plan-card__descr">Better for growing businesses that want more customers.</p>
+                            <div class="plan-card__advantages">
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Unlimited project use
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Advanced dashboard
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    All components included
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Advanced insight
+                                </p>
+                            </div>
+                            <!-- /.plan-card__advantages -->
+                            <button class="plan-card__button modal-open-btn">
+                                Get Started
+                                <svg class="icon arrow-right-icon plan-card__arrow-right">
+                                    <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.pricing-plan__item plan-card -->
+
+                    <div class="pricing-plan__item plan-card">
+                        <div class="plan-card__line plan-card__line--premium"></div>
+                        <!-- /.plan-card__line -->
+                        <div class="pricing-plan__item-wrapper">
+                            <div class="plan-card__price plan-card__price--essentials">
+                                <span class="plan-card__price-value">$339</span>
+                                <span class="plan-card__price-value plan-card__price-value--hidden">$288</span>
+                                <span class="price-small">/month</span>
+                            </div>
+                            <span class="plan-card__name">Premium</span>
+                            <p class="plan-card__descr">Advanced features for pros who need more customization.</p>
+                            <div class="plan-card__advantages">
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Unlimited project use
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Advanced dashboard
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Mutlivariate components
+                                </p>
+                                <p class="plan-card__advantages-item">
+                                    <img src="images/check-icon.svg" alt="check" class="plan-card__advantages-img">
+                                    Phone Support
+                                </p>
+                            </div>
+                            <!-- /.plan-card__advantages -->
+                            <button class="plan-card__button modal-open-btn">
+                                Get Started
+                                <svg class="icon arrow-right-icon plan-card__arrow-right">
+                                    <use xlink:href="images/sprites.svg#arrow-right-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.pricing-plan__item plan-card -->
+                </div>
+                <!-- /.pricing-plan__list -->
+            </div>
+            <!-- /.pricing-plan -->
+        </div>
+        <!-- /.container -->
+        <img src="images/included-wave.png" class="included__wave" alt="">
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal sign-up-modal">
+            <div class="sign-up-modal__inner">
+                <img src="images/close-icon.png" alt="Close modal" class="sign-up-modal__close-btn">
+                <h3 class="sign-up-modal__title">Let’s join us</h3>
+                <button class="sign-up-modal__google-sign-up-btn">
+                    <div class="google-sign-up-img">
+                        <img src="images/Bitmap@3x.png" alt="Sign up via Google">
+                    </div>Sign up with Google</button>
+                <h4 class="sign-up-modal__subtitle">Or, sign up with your email</h4>
+                <form action="#" class="sign-up-modal__form">
+                    <h6 class="input-title">Your name*</h6>
+                    <input type="text" class="sign-up-modal__input sign-up-modal__name" placeholder="Enter your name">
+                    <h6 class="input-title">Email address*</h6>
+                    <input type="email" class="sign-up-modal__input sign-up-modal__email" placeholder="Enter email address">
+                    <h6 class="input-title">Password*</h6>
+                    <input type="password" class="sign-up-modal__input sign-up-modal__password" placeholder="Enter password">
+                    <input type="checkbox" class="sign-up-modal__checkbox-input" id="modal-checkbox">
+                    <label class="sign-up-modal__checkbox" for="modal-checkbox">Agree to terms & conditions</label>
+                    <button class="sign-up-modal__sign-up-btn" type="submit">Sign up</button>
+                </form>
+                <span class="sign-up-modal__info">Already have an account?<a class="sign-up-modal__info-link" href="#">Sign in now</a></span>
+            </div>
+            <!-- /.sign-up-mpdal__inner -->
+        </div>
+        <!-- /.modal sign-up-modal -->
+    </div>
+    <!-- /.modal-overlay -->
+
+    <section class="included">
+        <div class="container">
+            <h5 class="included__suptitle">premium</h5>
+            <h2 class="included__title">All subscriptions plan include these features</h2>
+            <div class="included__list">
+                <div class="included__item">
+                    <div class="included__image">
+                        <img src="images/icon-workflow.svg" alt="Worckflow" class="included__icon">
+                    </div>
+                    <div class="included__descr">
+                        <h5 class="included__descr-title">Marketing tools</h5>
+                        <p class="included__descr-text">Materials, education and campaigns to help you share with current and future clients.</p>
+                    </div>
+                </div>
+                <!-- /.included__item -->
+                <div class="included__item">
+                    <div class="included__image">
+                        <img src="images/benefits.png" alt="Benefits" class="included__icon">
+                    </div>
+                    <div class="included__descr">
+                        <h5 class="included__descr-title">Benefits</h5>
+                        <p class="included__descr-text">Digital employee records, quoting, enrollment, and reporting in English and Indonesian.</p>
+                    </div>
+                </div>
+                <!-- /.included__item -->
+                <div class="included__item">
+                    <div class="included__image">
+                        <img src="images/customers.png" alt="Customers" class="included__icon">
+                    </div>
+                    <div class="included__descr">
+                        <h5 class="included__descr-title">Customer services</h5>
+                        <p class="included__descr-text">Access to our team of industry experts, personal training, support line and help desk.</p>
+                    </div>
+                </div>
+                <!-- /.included__item -->
+                <div class="included__item">
+                    <div class="included__image">
+                        <img src="images/partners.png" alt="Partners" class="included__icon">
+                    </div>
+                    <div class="included__descr">
+                        <h5 class="included__descr-title">Become partners</h5>
+                        <p class="included__descr-text">We can help you set up and manager your groups if you are become our partner.</p>
+                    </div>
+                </div>
+                <!-- /.included__item -->
+            </div>
+            <!-- /.uncluded__list -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="faq__title">Frequently asked questions</h2>
+            <div class="faq__accordeon">
+                <div class="faq__item">
+                    <h4 class="faq__question">How do I pay for the Essentials or Premium plan?
+                        <div class="faq__icons">
+                            <svg class="icon faq__icon faq__icon--plus">
+                                <use xlink:href="images/sprites.svg#plus-icon"></use>
+                            </svg>
+                            <svg class="icon faq__icon faq__icon--minus">
+                                <use xlink:href="images/sprites.svg#minus-icon"></use>
+                            </svg>
+                        </div>
+                        <!-- /.faq__icons -->
+                    </h4>
+                    <p class="faq__answer">You can pay with a credit card or via net banking (if you’re in United States). We will renew your subscription automatically at the end of every billing cycle.</p>
+                </div>
+                <!-- /.faq__item -->
+                <div class="faq__item">
+                    <h4 class="faq__question">Can I cancel my Essentials or Premium plan subscription at any time?
+                        <div class="faq__icons">
+                            <svg class="icon faq__icon faq__icon--plus">
+                                <use xlink:href="images/sprites.svg#plus-icon"></use>
+                            </svg>
+                            <svg class="icon faq__icon faq__icon--minus">
+                                <use xlink:href="images/sprites.svg#minus-icon"></use>
+                            </svg>
+                        </div>
+                        <!-- /.faq__icons -->
+                    </h4>
+                    <p class="faq__answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio exercitationem, quis recusandae ex quae praesentium molestiae blanditiis quia eaque.</p>
+                </div>
+                <!-- /.faq__item -->
+                <div class="faq__item">
+                    <h4 class="faq__question">We need to add new users to our team. How will that be billed?
+                        <div class="faq__icons">
+                            <svg class="icon faq__icon faq__icon--plus">
+                                <use xlink:href="images/sprites.svg#plus-icon"></use>
+                            </svg>
+                            <svg class="icon faq__icon faq__icon--minus">
+                                <use xlink:href="images/sprites.svg#minus-icon"></use>
+                            </svg>
+                        </div>
+                        <!-- /.faq__icons -->
+                    </h4>
+                    <p class="faq__answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eligendi esse voluptatum itaque consectetur quos, quaerat iste ut, nihil debitis porro?</p>
+                </div>
+                <!-- /.faq__item -->
+                <div class="faq__item">
+                    <h4 class="faq__question">My team wants to cancel its subscription. How do we do that? Can we get a refund?
+                        <div class="faq__icons">
+                            <svg class="icon faq__icon faq__icon--plus">
+                                <use xlink:href="images/sprites.svg#plus-icon"></use>
+                            </svg>
+                            <svg class="icon faq__icon faq__icon--minus">
+                                <use xlink:href="images/sprites.svg#minus-icon"></use>
+                            </svg>
+                        </div>
+                        <!-- /.faq__icons -->
+                    </h4>
+                    <p class="faq__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates mollitia ullam delectus eius nulla fuga repellendus voluptate culpa est iure.</p>
+                </div>
+                <!-- /.faq__item -->
+                <div class="faq__item">
+                    <h4 class="faq__question">Do you offer discounts for non-profit organizations or educational institutions?
+                        <div class="faq__icons">
+                            <svg class="icon faq__icon faq__icon--plus">
+                                <use xlink:href="images/sprites.svg#plus-icon"></use>
+                            </svg>
+                            <svg class="icon faq__icon faq__icon--minus">
+                                <use xlink:href="images/sprites.svg#minus-icon"></use>
+                            </svg>
+                        </div>
+                        <!-- /.faq__icons -->
+                    </h4>
+                    <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe natus hic reprehenderit quisquam? Vitae corrupti nobis molestiae illo quod alias pariatur.</p>
+                </div>
+                <!-- /.faq__item -->
+            </div>
+            <!-- /.faq__accrdeon -->
+            <div class="faq__contact">
+                    <h2 class="faq__contact-title">Still have a questions?</h2>
+                    <p class="faq__contact-descr">If you cannot find answer to your question in our FAQ, you can always contact us. We wil answer to you shortly!</p>
+                    <div class="faq__contact-cards">
+                        <div class="faq__contact-card">
+                            <div class="faq__contact-image">
+                                <img src="images/phone.png" alt="Phone" class="faq__contact-icon">
+                            </div>
+                            <div class="faq__contact-info">
+                                <a href="tel:+16467865060" class="faq__contact-link">+1 (646) 786-5060</a>
+                                <p class="faq__contact-text">We are always happy to help.</p>
+                            </div>
+                        </div>
+                        <!-- /.faq__card -->
+                        <div class="faq__contact-card">
+                            <div class="faq__contact-image">
+                                <img src="images/customers.png" alt="Email" class="faq__contact-icon">
+                            </div>
+                            <div class="faq__contact-info">
+                                <a href="mailto:support@helpcenter.com" class="faq__contact-link">support@helpcenter.com</a>
+                                <p class="faq__contact-text">Alternative way to get anwser faster.</p>
+                            </div>
+                        </div>
+                        <!-- /.faq__card -->
+                    </div>
+                    <!-- /.faq__cards -->
+            </div>
+        </div>
+        <!-- /.container -->
+        <img src="images/included-wave.png" class="included__wave" alt="">
+    </section>
+    
+    <footer class="footer pricing-footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <a href="#" class="footer__logo-link">
+                            <img src="images/logo-black.png" alt="Logo" class="footer__logo-img">
+                        </a>
+                    </div>
+                    <p class="footer__text">Build a modern and creative website with crealand</p>
+                    <div class="footer__socials">
+                        <a href="https://www.google.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#google-footer-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#twitter-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#instagram-icon"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="blank" class="footer__socials-link">
+                            <svg class="icon footer__socials-icon">
+                                <use xlink:href="images/sprites.svg#linkedin-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- /.footer__socials -->
+                </div>
+                <!-- /.footer__info -->
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">Product</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Landingpage</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Features</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Documentation</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Referral Program</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Pricing</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">Services</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Documentation</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Design</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Themes</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Landingpage</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">UI Kit</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">Company</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Terms</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Careers</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <h4 class="footer__list-title">More</h4>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Documentation</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">License</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Changelog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.footer__wrapper -->
+            <div class="footer__copyright">
+                <div class="footer__like">
+                    <img src="images/heart.png" alt="Heart" class="footer__like-img">
+                </div>
+                <p class="footer__copyright-text">Copyright © 2019. Crafted with love.</p>
+            </div>
+            <!-- /.footer__copyright -->
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/maim.js"></script>
+</body>
+</html>
