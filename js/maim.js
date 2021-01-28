@@ -10,8 +10,9 @@ var dropdownSubmenu = $('.dropdown-submenu');
 var dropdownSubmenuItem = $('.dropdown-submenu__item')
 
 function closeModal() {
-    modalOverlay.removeClass('modal-overlay--active')
-    modal.removeClass('sign-up-modal--active')
+    modalOverlay.removeClass('modal-overlay--active');
+    modal.removeClass('sign-up-modal--active');
+    $('.sign-up-modal__form').trigger('reset');
 };
 
 function closeDropdownMenu() {
