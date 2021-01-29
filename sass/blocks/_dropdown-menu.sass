@@ -10,11 +10,15 @@
     box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
     border-radius: 12px
     position: absolute
-    display: none
+    visibility: hidden
     opacity: 0
+    transform: scaleY(0)
+    transform-origin: top
+    transition: transform 0.5s
     &--active
-        display: block
+        visibility: visible
         opacity: 1
+        transform: scaleY(1)
     &__item
         display: flex
         align-items: center
@@ -45,12 +49,18 @@
     box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
     border-radius: 12px
     color: $black
-    display: none
+    visibility: hidden
     opacity: 0
+    transform: scaleX(0)
+    transform-origin: left
+    transition: transform 0.5s
     cursor: pointer
     &--active
+        visibility: visible
         opacity: 1
-        display: block
+        transform: scaleY(1)
+    &__list
+        text-align: left
     &__item
         font-style: normal
         font-weight: 400
