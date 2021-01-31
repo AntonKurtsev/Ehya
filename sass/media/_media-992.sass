@@ -204,12 +204,15 @@
         &__menu
             flex-wrap: wrap
             justify-content: space-between
-        &__list
-            margin-bottom: 48px
         &__list + ul
-            margin: 0
+            margin-top: 48px
+            margin-left: 0
+        &__list 
+            &:nth-child(2)
+                margin-top: 0
         &__item
             &:hover
                 color: inherit
                 font-weight: 400
+
 
