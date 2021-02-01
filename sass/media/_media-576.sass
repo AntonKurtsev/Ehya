@@ -1,0 +1,229 @@
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+    .section
+        &-suptitle
+            margin-bottom: 16px
+        &-title
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 16px
+        &-descr
+            font-size: 16px
+            line-height: 28px
+            margin-bottom: 36px
+    .hero
+        &__header
+            padding: 20px 0
+        &__title
+            font-size: 32px
+            line-height: 40px
+            margin: 40px 0 48px
+        &__subtitle
+            font-size: 16px
+            line-height: 28px
+            margin-bottom: 40px
+        &__descr
+            font-size: 14px
+            line-height: 24px
+            margin-bottom: 46px
+            text-align: left
+        &__button
+            min-width: 207px
+            padding: 13px 23px
+            font-size: 16px
+            line-height: 22px
+            &-group
+                flex-direction: column
+                margin-bottom: 16px
+            &:first-child
+                margin: 0 0 12px 0
+    .features-cards
+        &__inner
+            margin-top: -250px
+            grid-template-columns: 1fr
+            grid-gap: 12px
+            margin-bottom: 24px
+        &__item
+            padding: 32px 24px
+            align-items: center
+            text-align: center
+        &__icon
+            margin-bottom: 23px
+        &__title
+            font-size: 20px
+            line-height: 24px
+            margin-bottom: 11px
+        &__text
+            font-size: 16px
+            line-height: 28px
+        &__explore-all
+            display: block
+            font-size: 16px
+            line-height: 22px
+    .quickstart
+        &__title,
+        &__descr
+            max-width: 272px
+        &__monitor
+            max-width: 288px
+            padding: 24px 5px 24px 24px
+            margin-bottom: 20px
+        &__button
+            padding: 6px 12px
+            font-size: 14px
+            line-height: 20px
+            + button
+                margin-left: 8px
+        &__code-sample
+            font-size: 14px
+            line-height: 20px
+        &__explanation
+            &-item
+                flex-direction: column
+                align-items: center
+        &__text
+            font-size: 14px
+            line-height: 20px
+            &:first-child
+                margin-bottom: 16px
+    .powerfull
+        padding-bottom: 40px
+        &__card
+            padding: 40px 0 30px
+        &__count
+            font-size: 32px
+            line-height: 42px
+            margin-bottom: 3px
+        &__text
+            font-size: 16px
+            line-height: 28px
+    .features
+        padding: 40px 0 35px
+        &__inner
+            grid-gap: 12px
+        &__card
+            padding: 23px
+            &-icon
+                margin-bottom: 20px
+            &-title
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 11px
+                text-align: center
+            &-text
+                font-size: 16px
+                line-height: 28px
+                margin-bottom: 20px
+            &-link
+                font-size: 16px
+                line-height: 22px
+    .sponsors
+        padding-bottom: 64px
+        &__container
+            max-width: 100%
+            padding: 0 15px
+        &__inner
+            margin: 0
+        &__title
+            margin-bottom: 20px
+            font-size: 28px
+            line-height: 36px
+        &__left-side
+            margin-bottom: 61px
+        &__right-side
+            position: relative
+            min-height: 463px
+            width: 100%
+            margin: 0
+        &__item
+            position: absolute
+            margin: 0
+            &--airbnb
+                left: 0
+                bottom: 82px
+            &--google
+                left: 96px
+                top: 0
+            &--fitbit
+                left: 2px
+                top: 105px
+            &--spotify
+                top: 151px
+                right: 0
+            &--mapbox
+                bottom: 0
+                right: 0
+        &__wave
+            display: none
+    .questions
+        margin: 0
+        padding: 48px 0
+        &__descr
+            margin-bottom: 40px
+        &-pins
+            flex-wrap: wrap
+            justify-content: center
+            margin-bottom: 37px
+            &__item + .questions-pins__item
+                margin: 21px 0 0 0
+            &__item
+                max-width: 272px
+        &__slider
+            max-width: 272px
+        &-slider
+            &__slide
+                padding-bottom: 21px
+            &__image
+                margin-bottom: 30px
+            &__text
+                margin-bottom: 24px
+                font-size: 28px
+                line-height: 44px
+                max-width: 100%
+    .accordeon
+        &__wrapper
+            padding: 0 24px
+        &__item
+            padding: 28px 0 25px
+        &__question
+            font-size: 16px
+            line-height: 22px
+        &__icons
+            display: none
+        &__answer
+            font-size: 14px
+            line-height: 24px
+            margin: 12px 0 0
+    .sign-up
+        &__title
+            position: relative
+            z-index: 5
+            max-width: 272px
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 40px
+        &__left-patern
+            bottom: -163px
+            left: -380px
+        &__right-patern
+            display: none
+        &__button
+            min-width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            &-group
+                width: 100%
+        &__git
+            margin-right: 10px
+            &-button
+                color: $black
+                background-color: $white
+                margin-bottom: 12px
+                svg
+                    fill: $black
+        &__arrow-right
+            margin-left: 21px
+        
+        
