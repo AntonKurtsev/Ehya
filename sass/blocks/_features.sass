@@ -1,17 +1,14 @@
 .features
-    padding: 72px 0 56px
+    padding: 72px 0 86px
     background-color: #F8FBFF
     &__inner
-        display: flex
-        align-items: flex-start
-        justify-content: space-between
-        flex-wrap: wrap
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 30px
     &__card
-        flex-basis: 31.55%
         display: flex
         flex-direction: column
         align-items: flex-start
-        margin-bottom: 30px
         min-height: 370px
         padding: 48px 32px 37px
         background-color: $white
