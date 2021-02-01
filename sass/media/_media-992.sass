@@ -33,7 +33,13 @@
                 color: inherit
                 background-color: inherit
             &:hover svg
-                fill: white
+                fill: $white
+        &__git-button
+            &:hover
+                color: $black
+                background-color: $white
+                svg
+                    fill: $black
         &__wave
             margin-top: 54px
     .left-patern img
@@ -194,6 +200,12 @@
                 background-color: inherit
             &:hover svg
                 fill: $white
+        &__git-button
+            &:hover
+                color: $black
+                background-color: $white
+            &:hover svg
+                fill: $black
     .footer
         padding-bottom: 64px
         &__container
