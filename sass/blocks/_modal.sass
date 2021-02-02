@@ -139,6 +139,8 @@
             background-image: url(../images/menu-arrow-down.svg)
             background-repeat: no-repeat
             background-position: 50% 45%
+        &:focus + label::before
+                box-shadow: 0 0 15px $blue
     &__sign-up-btn
         width: 100%
         background-color: $blue
@@ -156,6 +158,8 @@
         &:hover
             color: $blue
             background-color: $white
+        &:focus
+            box-shadow: 0 0 15px $bluebox-shadow: 0 0 15px $blue
     &__info
         font-style: normal
         font-weight: 600
