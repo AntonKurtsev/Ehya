@@ -28,6 +28,7 @@ $(document).ready(function () {
     modalBtn.on('click', function () {
         modalOverlay.addClass('modal-overlay--active');
         modal.addClass('sign-up-modal--active');
+        closeMobileMenu();
     });
 
     modalCloseBtn.on('click', function() {
@@ -155,6 +156,32 @@ $(document).ready(function () {
         $(this).parent().toggleClass('faq__item--active');
         $('.faq__icons').not($(this).children()).removeClass('faq__icons--active');
         $(this).children().toggleClass('faq__icons--active');
+    });
+
+    // Mobile menu
+    function closeMobileMenu() {
+        $('.mobile-menu').removeClass('mobile-menu--active');
+        $('.mobile-menu__submenu-list').slideUp(500);
+        $('.mobile-menu__link').removeClass('mobile-menu__link--active');
+    };
+
+    $('.mobile-menu-open-btn').click(function () {
+        $('.mobile-menu').addClass('mobile-menu--active');
+    });
+
+    $('.mobile-menu__close-btn').click(function () {
+        closeMobileMenu();
+    });
+
+    $('.mobile-menu__overlay').click(function() {
+        closeMobileMenu();
+    });
+
+    $('.mobile-menu__link--dropdown').click(function() {
+        $(this).toggleClass('mobile-menu__link--active');
+        $('.mobile-menu__link').not($(this)).removeClass('mobile-menu__link--active');
+        $(this).next().slideToggle(500);
+        $('.mobile-menu__submenu-list').not($(this).next()).slideUp(500);
     });
 })
 
