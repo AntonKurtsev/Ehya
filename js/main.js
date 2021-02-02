@@ -46,52 +46,31 @@ $(document).ready(function () {
     });
 
     // Header dropdown menu
-    headerMenuItem.hover(function () {
-        headerMenuItem.removeClass('menu__item--hovered');
+    $('.menu__item').hover(function() {
+        $('.menu__item').removeClass('menu__item--hovered');
         if ($(this).hasClass('menu__item--dropdown')) {
             $(this).addClass('menu__item--hovered');
-            var offset = $(this).offset();
-            var bottomOffset = offset.top + headerMenuItem.outerHeight();
-            dropdownSubmenu.removeClass('dropdown-submenu--active');
-            dropdownMenu.addClass('dropdown-menu--active');
-            dropdownMenu.css('left', offset.left - 10);
-            dropdownMenu.css('top', bottomOffset + 15);
+            $(this).children('.dropdown-menu').slideDown(500);
         } else {
-            closeDropdownMenu();
-            dropdownMenuItem.removeClass('dropdown-menu__item--hovered');
+            $('.dropdown-menu').slideUp(500);
+            $('.menu__item').removeClass('menu__item--hovered')
         }
+    }, function() {
+        $('.menu__item').removeClass('menu__item--hovered');
+        $('.dropdown-menu').slideUp(1);
     });
 
-    dropdownMenuItem.hover(function () {
-        var offset = $(this).offset();
-        var rightOffset = offset.left + dropdownMenuItem.outerWidth();
-        dropdownMenuItem.removeClass('dropdown-menu__item--hovered');
-        $(this).addClass('dropdown-menu__item--hovered');
-        dropdownSubmenu.addClass('dropdown-submenu--active');
-        dropdownSubmenu.css('top' , offset.top - 16);
-        dropdownSubmenu.css('left', rightOffset + 20);
-        }, function () {
-            return;
+    $('.dropdown-menu__item').hover(function() {
+        $('.dropdown-menu__item').removeClass('dropdown-menu__item--hovered');
+        if ($(this).hasClass('dropdown-menu__item--dropdown')) {
+            $(this).addClass('dropdown-menu__item--hovered');
+            $(this).children('.dropdown-submenu').slideDown(500);
+        } else {
+            $('.dropdown-submenu').slideUp(1);
+            $('.dropdown-menu__item').removeClass('dropdown-menu__item--hovered');
         }
-    );
-
-    dropdownSubmenu.hover(function () {
-        return;
-    }, function(){
-        dropdownSubmenu.removeClass('dropdown-submenu--active');
-    });
-
-    dropdownMenuItem.click(function (e) {
-        e.stopPropagation();
-    });
-
-    dropdownSubmenuItem.click(function (e) {
-        e.stopPropagation();
-        closeDropdownMenu();
-    });
-
-    $(document).click(function() {
-        closeDropdownMenu();
+    }, function() {
+        $('.dropdown-submenu').slideUp(1);
     });
 
     // Quickstart tabs
