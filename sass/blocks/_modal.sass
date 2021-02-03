@@ -19,17 +19,19 @@
         padding: 48px 64px 46px
         background-color: $white
         max-width: 488px
-        max-height: 95vh
-        overflow-y: scroll
         border-radius: 12px
         transform: scale(0)
         color: $white
         z-index: 16
         transition: all 0.5s
-        &::-webkit-scrollbar
-            width: 0px
     &--active &__inner
         transform: scale(1)
+    &__content
+        max-height: 80vh
+        overflow-y: scroll
+        scrollbar-width: none
+        &::-webkit-scrollbar
+            display: none
     &__close-btn
         position: absolute
         right: 24px
