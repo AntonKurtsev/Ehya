@@ -1,5 +1,6 @@
 .pricing
     &-hero
+        padding: 124px
         background: linear-gradient(180deg, rgba(250, 251, 251, 0.0001) 0%, #F8FBFF 100%)
         text-align: center
         color: $black
@@ -20,8 +21,6 @@
         &__item
             &:hover
                 border-bottom: 2px solid $black
-    &-header
-        position: relative
         &__button
             color: $blue
             border: 2px solid $blue
@@ -52,8 +51,9 @@
                 border-radius: 50% 
                 background: linear-gradient(180deg, #35B27D 0%, #28A671 100%)
                 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2)
+                transition: all 0.3s ease-in-out
                 &--annually
-                    margin-left: auto
+                    transform: translateX(30px)
         &__period
             margin-top: 7px
             font-style: normal

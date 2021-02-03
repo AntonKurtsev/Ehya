@@ -125,21 +125,20 @@
         <!-- /.mobile-menu__inner -->
     </div>
     <!-- /.mobile-menu -->
-    
-    <section class="pricing-hero">
-        <div class="container">
-            <header class="hero__header pricing-hero__header pricing-header">
-                <div class="header__logo pricing-header__logo">
-                    <a href="index.html" class="header__link pricing-header__link">
-                        <img src="images/logo-black.png" alt="Ehya" class="header__logo-image pricing-header__logo-image">
+    <header class="header header--pricing">
+        <div class="container header__container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="index.html" class="header__link">
+                        <img src="images/logo-black.png" alt="Ehya" class="header__logo-image">
                     </a>
                 </div>
-                <nav class="header__menu menu pricing-header__menu pricing-menu">
+                <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item pricing-menu__item">
+                        <li class="menu__item">
                             <a href="index.html" class="menu__link">Home</a>
                         </li>
-                        <li class="menu__item pricing-menu__item menu__item--dropdown" id="landings">
+                        <li class="menu__item menu__item--dropdown" id="landings">
                             <a href="#" class="menu__link">Landings
                                 <img src="images/menu-arrow-down-black.svg" alt="More" class="menu__img">
                             </a>
@@ -285,7 +284,7 @@
                             </div>
                             <!-- /.dropdown-menu -->
                         </li>
-                        <li class="menu__item pricing-menu__item menu__item--dropdown" id="pages">
+                        <li class="menu__item menu__item--dropdown" id="pages">
                             <a href="#" class="menu__link">Pages
                                 <img src="images/menu-arrow-down-black.svg" alt="More" class="menu__img">
                             </a>
@@ -431,22 +430,29 @@
                             </div>
                             <!-- /.dropdown-menu -->
                         </li>
-                        <li class="menu__item pricing-menu__item">
+                        <li class="menu__item">
                             <a href="#" class="menu__link">Docs</a>
                         </li>
-                        <li class="menu__item pricing-menu__item">
+                        <li class="menu__item">
                             <a href="#" class="menu__link">Help</a>
                         </li>
                     </ul>
                 </nav>
-                <button class="header__button pricing-header__button modal-open-btn">Get it now</button>
+                <button class="header__button header__button--pricing modal-open-btn">Get it now</button>
+        
                 <button class="mobile-menu-open-btn">
                     <span class="open-btn-item open-btn-item--black"></span>
                     <span class="open-btn-item open-btn-item--black"></span>
                     <span class="open-btn-item open-btn-item--black"></span>
                 </button>
-            </header>
-
+            </div>
+            <!-- /.header__wrapper -->
+        </div>
+        <!-- /.container header__container -->
+    </header>
+    
+    <section class="pricing-hero">
+        <div class="container">
             <h1 class="pricing-hero__title">Our pricing plan made simple</h1>
             <p class="pricing-hero__text">All types of businesses need access to development resources, so we give you the option to decide how much you need to use.</p>
             <div class="pricing-plan">

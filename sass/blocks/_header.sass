@@ -1,0 +1,60 @@
+.header
+    display: flex
+    align-items: center
+    padding: 38px 0 34px
+    color: $white
+    background-color: $blue
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 6
+    transition: padding 0.3s
+    &--pricing
+        background-color: $white
+        color: $black
+    &-scroll
+        opacity: 0.95
+        padding: 10px 0
+        transition: padding 0.3s
+        border-bottom: 2px solid $blue
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__menu
+        margin-left: auto
+    &__button
+        padding: 13px 24px
+        border: 2px solid $white
+        border-radius: 8px
+        font-style: normal
+        font-weight: 900
+        font-size: 16px
+        line-height: 22px
+        text-align: center
+        &:hover
+            color: $black
+            background-color: $white
+        &--pricing
+            color: $blue
+            border: 2px solid $blue
+            border-radius: 2000px
+            &:hover
+                color: $white
+                background-color: $blue
+.mobile-menu-open-btn
+    margin-left: auto
+    width: 24px
+    height: 24px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    display: none
+.open-btn-item
+    display: block
+    width: 100%
+    height: 2px
+    background-color: $white
+    &--black
+        background-color: $black
