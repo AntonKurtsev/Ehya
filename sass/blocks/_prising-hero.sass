@@ -108,14 +108,18 @@
             &--premium
                 background-color: $blue
         &__price
+            position: relative
             display: inline-block
             font-family: 'HKGrotesk-400'
             font-size: 40px
             line-height: 46px
             margin-bottom: 18px
             &-value
+                position: absolute
+                transition: all 0.3s
                 &--hidden
-                    display: none
+                    visibility: hidden
+                    opacity: 0
             &--standart
                 color: $black
             &--essentials
@@ -185,3 +189,6 @@
     font-size: 16px
     line-height: 22px
     color: $grey
+    padding-left: 70px
+    &--big-padding
+        padding-left: 91px
