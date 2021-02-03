@@ -73,6 +73,15 @@ $(document).ready(function () {
         $('.dropdown-submenu').slideUp(1);
     });
 
+    // Header xhange when scroll
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 124) {
+            $('.header').addClass('header-scroll');
+        } else {
+            $('.header').removeClass('header-scroll');
+        }
+    });
+
     // Quickstart tabs
     var tabsButton = $('.quickstart__button');
     var tabsCodeSample = $('.quickstart__code-sample');
