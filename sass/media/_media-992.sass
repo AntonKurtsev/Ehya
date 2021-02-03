@@ -1,4 +1,6 @@
 @media (max-width: 992px)
+    a:hover:after
+        transform: scaleX(0)
     .container
         max-width: 88.6%
     .section
@@ -73,8 +75,6 @@
             width: 100%
         &__explore-all
             display: none
-            &:hover
-                border-bottom: 2px solid transparent
     .quickstart
         padding-top: 48px
         &__descr
@@ -127,7 +127,8 @@
             &-link
                 margin-top: 0
                 &:hover
-                    border-bottom: 2px solid transparent
+                    &::after
+                        transform: scaleX(0)
     .sponsors
         &__inner
             flex-direction: column
@@ -237,5 +238,13 @@
             &:hover
                 color: inherit
                 font-weight: 400
+        &__socials
+            &-link
+                &:hover
+                    background-color: rgba(90, 113, 132, 0.1)
+            &-icon
+                &:hover
+                    fill: $grey
+                    background-color: 
 
 

@@ -43,6 +43,41 @@
             &:hover
                 color: $white
                 background-color: $blue
+.menu
+    &__list
+        display: flex
+        align-items: center
+        padding: 13px 0
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+    &__item
+        position: relative
+        margin-right: 40px
+        border-bottom: 2px solid transparent
+        transition: 0.2s all
+        &::after
+            content: ''
+            position: absolute
+            bottom: -3px
+            right: 0
+            height: 2px
+            background-color: $white
+            width: 0%
+            transition: 0.3s
+        &:hover
+            &::after
+                width: 100%
+                left: 0
+        &--pricing
+            &::after
+                background-color: $black
+    &__link
+        display: flex
+        align-items: center
+    &__img
+        margin-left: 4px
 .mobile-menu-open-btn
     margin-left: auto
     width: 24px

@@ -47,16 +47,16 @@ $(document).ready(function () {
 
     // Header dropdown menu
     $('.menu__item').hover(function() {
-        $('.menu__item').removeClass('menu__item--hovered');
+        // $('.menu__item').removeClass('menu__item--hovered');
         if ($(this).hasClass('menu__item--dropdown')) {
-            $(this).addClass('menu__item--hovered');
+            // $(this).addClass('menu__item--hovered');
             $(this).children('.dropdown-menu').slideDown(500);
         } else {
             $('.dropdown-menu').slideUp(500);
-            $('.menu__item').removeClass('menu__item--hovered')
+            // $('.menu__item').removeClass('menu__item--hovered')
         }
     }, function() {
-        $('.menu__item').removeClass('menu__item--hovered');
+        $('.dropdown-menu__item').removeClass('dropdown-menu__item--hovered');
         $('.dropdown-menu').slideUp(1);
     });
 
@@ -71,6 +71,7 @@ $(document).ready(function () {
         }
     }, function() {
         $('.dropdown-submenu').slideUp(1);
+        $('.dropdown-menu__item').removeClass('dropdown-menu__item--hovered');
     });
 
     // Header xhange when scroll
