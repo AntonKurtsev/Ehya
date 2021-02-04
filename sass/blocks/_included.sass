@@ -28,17 +28,17 @@
         letter-spacing: 0.2px
         color: $black
     &__list 
-        display: flex
-        align-items: flex-start
-        justify-content: space-between
-        flex-wrap: wrap
-        padding-bottom: 78px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        column-gap: 62px
+        row-gap: 57px
+        padding-bottom: 135px
         border-bottom: 1px solid $light-grey
     &__item
         max-width: 523px
         display: flex
         align-items: flex-start
-        margin-bottom: 57px
     &__image
         width: 64px
         height: 64px

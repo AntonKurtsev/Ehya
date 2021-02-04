@@ -215,6 +215,102 @@
                 background-color: $white
             &:hover svg
                 fill: $black
+    .pricing
+        &-hero
+            padding-top: 80px
+            &__title
+                font-size: 48px
+                line-height: 60px
+            &__text
+                margin-bottom: 32px
+        &-plan
+            padding-bottom: 60px
+            &__switcher
+                margin-bottom: 48px
+            &__list
+                grid-template-columns: 1fr
+                grid-gap: 24px
+                width: 100%
+                margin-bottom: 0
+            &__item
+                &-wrapper
+                    flex-direction: row
+                    flex-wrap: wrap
+                    padding: 48px 36px
+            &__content
+                flex-basis: 50%
+    .plan
+        &-card
+            min-height: 338px
+            &__name
+                margin-bottom: 10px
+            &__descr
+                max-width: 248px
+                margin-bottom: 32px
+            &__advantages
+                padding-top: 0
+                border-top: none
+                flex-basis: 50%
+                margin-bottom: 0
+                &-item + p
+                    margin-top: 25px
+            &__button
+                width: 200px
+                margin: 0
+                border-radius: 8px
+                &:hover
+                    background-color: $white
+                    color: $blue
+                    svg
+                        fill: $blue
+    .included
+        padding-top: 60px
+        &__wave
+            display: none
+        &__suptitle
+            margin-bottom: 22px
+            padding: 6px 18px 6px 17px
+            font-size: 14px
+            line-height: 20px
+            color: #36B37E
+        &__title
+            max-width: 455px
+            font-size: 32px
+            line-height: 40px
+        &__list
+            grid-template-columns: 1fr
+            grid-gap: 32px
+            max-width: 523px
+            margin: 0 auto
+            padding-bottom: 97px
+        &__descr
+            max-width: 431px
+    .faq
+        padding-top: 96px
+        &__title
+            font-size: 32px
+            line-height: 40px
+            margin-bottom: 48px
+        &__accordeon
+            margin-bottom: 96px
+        &__item
+            text-align: left
+        &__icon
+            margin-left: 29px
+        &__contact
+            &-title
+                font-size: 32px
+                line-height: 40px
+            &-descr
+                margin-bottom: 48px
+            &-cards
+                flex-direction: column
+                align-items: center
+                max-width: 465px
+            &-card
+                width: 100%
+            &-card + &-card
+                margin-top: 16px
     .footer
         padding-bottom: 64px
         &__container

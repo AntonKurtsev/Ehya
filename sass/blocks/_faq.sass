@@ -12,21 +12,23 @@
     &__accordeon
         max-width: 960px
         margin: 0 auto 144px
+    &__icons
+        margin-bottom: auto
     &__icon
         width: 13px
         height: 16px
         fill: $black
         &--minus
             display: none
+            fill: $blue
+        &--active
+            fill: $blue
     &__item
         padding: 35px 32px
         border: 1px solid $light-grey
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.03)
         border-radius: 8px
-        cursor: pointer
-        &:hover .faq__icon
-            fill: $blue
-        &--active .faq__question
+        &--active  .faq__question
             color: $blue
     &__item + &__item
         margin-top: 16px
@@ -39,8 +41,11 @@
         line-height: 24px
         letter-spacing: 0.2px
         color: $black
+        cursor: pointer
         &:hover
             color: $blue
+        &:hover .faq__icon
+            fill: $blue
     &__icons
         display: flex
         align-items: center

@@ -74,7 +74,7 @@ $(document).ready(function () {
         $('.dropdown-menu__item').removeClass('dropdown-menu__item--hovered');
     });
 
-    // Header xhange when scroll
+    // Header change when scroll
     $(window).scroll(function() {
         if ($(window).scrollTop() > 124) {
             $('.header').addClass('header-scroll');
