@@ -47,6 +47,8 @@
         display: flex
         align-items: flex-start
         color: $black
+        &-item + &-item
+            margin-left: 30px
     &__list
         min-width: 165px
         &-title
@@ -55,8 +57,6 @@
             font-size: 18px
             line-height: 25px
             margin-bottom: 31px
-    &__list + ul
-        margin-left: 30px
     &__item
         font-style: normal
         font-weight: 400

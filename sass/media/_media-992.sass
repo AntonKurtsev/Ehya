@@ -324,13 +324,13 @@
         &__menu
             flex-wrap: wrap
             justify-content: space-between
-        &__list + ul
-            margin-top: 48px
-            margin-left: 0
-        &__list
-            flex-basis: 50%
-            &:nth-child(2)
-                margin-top: 0
+            &-item + &-item
+                margin-top: 48px
+                margin-left: 0
+            &-item
+                flex-basis: 50%
+                &:nth-child(2)
+                    margin-top: 0
         &__item
             &:hover
                 color: inherit
