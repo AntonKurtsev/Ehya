@@ -171,7 +171,8 @@ $(document).ready(function () {
         closeMobileMenu();
     });
 
-    $('.mobile-menu__link--dropdown').click(function() {
+    $('.mobile-menu__link--dropdown').click(function(e) {
+        e.preventDefault();
         $('.mobile-menu__link').not($(this)).removeClass('mobile-menu__link--active');
         $('.mobile-menu__submenu-list').not($(this).next()).slideUp(500);
         $(this).toggleClass('mobile-menu__link--active');
@@ -179,7 +180,8 @@ $(document).ready(function () {
         closeMobileSubmenu();
     });
 
-    $('.mobile-menu__submenu-link--dropdown').click(function() {
+    $('.mobile-menu__submenu-link--dropdown').click(function(e) {
+        e.preventDefault();
         $('.mobile-menu__subsubmenu-list').not($(this).next()).slideUp(500);
         $('.mobile-menu__submenu-link--dropdown').not($(this)).removeClass('mobile-menu__submenu-link--active');
         $(this).next().slideToggle(500);

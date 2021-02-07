@@ -113,12 +113,13 @@
         padding: 0 32px
     &__item
         padding: 26px 0 28px
-    &__item + &__item
-        border-top: 1px solid rgba(229, 234, 244, 0.7)
+        transition: all 0.5s
         &--active
             padding-bottom: 0
         &--active .accordeon__question
             color: $blue
+    &__item + &__item
+        border-top: 1px solid rgba(229, 234, 244, 0.7)
     &__question
         display: flex
         align-items: center
