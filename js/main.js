@@ -152,6 +152,7 @@ $(document).ready(function () {
         $('.mobile-menu').removeClass('mobile-menu--active');
         $('.mobile-menu__submenu-list').slideUp(500);
         $('.mobile-menu__link').removeClass('mobile-menu__link--active');
+        $('.mobile-menu-open-btn').removeClass('mobile-menu-open-btn--hidden');
         closeMobileSubmenu();
     };
     function closeMobileSubmenu() {
@@ -161,6 +162,7 @@ $(document).ready(function () {
 
     $('.mobile-menu-open-btn').click(function () {
         $('.mobile-menu').addClass('mobile-menu--active');
+        $('.mobile-menu-open-btn').addClass('mobile-menu-open-btn--hidden');
     });
 
     $('.mobile-menu__close-btn').click(function () {
